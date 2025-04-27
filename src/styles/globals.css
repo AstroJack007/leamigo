@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --primary-text-color: rgb(32,107,81);
   --background-alt: #eafff7;
   --card-bg: #ffffff;
   --card-bg-alt: #f9fffd;
@@ -117,7 +118,13 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+body {
+  color: var(--primary-text-color);
+}
 
+h1, h2, h3, h4, h5, h6, p, span, a {
+  color: var(--primary-text-color);
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -126,3 +133,4 @@
     @apply bg-background text-foreground;
   }
 }
+/* ...existing styles... */

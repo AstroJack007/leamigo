@@ -4,10 +4,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="antialiased" style={{background: '#f5fffb'}}>
+      <body className="antialiased " style={{background: '#f5fffb'}}>
         <Header/>
-        <Main />
-        <NextScript />
+        <div className="mt-10">
+          <Main />
+        </div>
+        <NextScript  />
       </body>
     </Html>
   );
